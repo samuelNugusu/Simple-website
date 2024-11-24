@@ -1,0 +1,380 @@
+body, html {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   font-family: Arial, sans-serif;
+}
+
+.home-content {
+   text-align: center;
+   padding: 20px;
+}
+
+.home-content p {
+   font-size: 18px;
+   line-height: 1.6;
+   color: #333;
+}
+
+.home-content img {
+   width: 100%;
+   border-radius: 10px;
+   margin-top: 20px;
+   transition: transform 0.3s;
+}
+
+.home-content img:hover {
+   transform: scale(1.05);
+}
+
+
+.icon{
+   color:orange;
+   font-family: italic;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.main {
+   width: 100%;
+   min-height: 100vh;
+   background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url('photo_2024-09-06_09-46-34.jpg');
+   background-position: center;
+   background-size: cover;
+   color: white;
+   overflow-y: auto;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.horizontal-menu ul {
+   list-style: none;
+   display: flex;
+   gap: 100px;
+}
+
+.horizontal-menu ul li a {
+   color: aqua;
+   text-decoration: none;
+   padding: 10px 15px;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+
+.horizontal-menu ul li a:hover {
+   background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.vertical-menu {
+   position: absolute;
+   top: 160px;
+   left: 1px;
+   background-color: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+   color: red;
+   border-radius: 5px;
+   margin-top: -6px;
+}
+
+.vertical-menu ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+
+.vertical-menu ul li {
+   margin-bottom: 15px;
+}
+
+.vertical-menu ul li a {
+   color: white;
+   text-decoration: none;
+   padding: 10px 15px;
+   display: block;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+
+.vertical-menu ul li a:hover {
+   background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.content {
+   text-align: center;
+   padding: 50px;
+}
+
+.content .par{
+   color: whitesmoke;
+   font-family: italic;
+}
+
+.content h1{
+   color: aqua;
+}
+.content h1 span{
+   color: orangered;
+}
+.section {
+   padding: 50px;
+   text-align: center;
+}
+
+.cn{
+   background-color:orangered;
+   border: none;
+   border-radius: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.cn a{
+   text-decoration: none;
+   color: black;
+   font-weight: 700;
+}
+.form {
+   margin-top: 20px;
+}
+.form h2{
+   color: orange;
+   font-family: Italic;
+   font-size: 36px;
+   font-weight: bold;
+}
+
+.form input {
+   max-width: 30%;
+   padding: 10px;
+   margin: 10px 0;
+   
+   border-radius: 10px;
+   background-color:aqua;
+   width: 60%; padding: 8px; margin: 8px 0; border: none; border-radius: 5px;
+   border-color: black;
+
+}
+
+.form .btnn{
+   padding: 8px 16px; 
+   background-color:orange; 
+   color: white; 
+   border: none; 
+   border-radius: 5px; 
+   cursor: pointer;
+}
+
+#form form{
+   text-align: 
+   center; 
+   margin-top: 20px;
+}
+
+#form input{
+   width: 60%; 
+   padding: 8px; 
+   margin: 8px 0; 
+   border: none; 
+   border-radius: 5px;
+}
+
+#form  textarea{
+   width: 60%; 
+   padding:8px; 
+   margin:8px 0; 
+   border: none; 
+   border-radius: 5px; 
+   height: 100px;
+}
+
+#form button{
+   padding: 8px 16px; 
+   background-color: #333; 
+   color: white; 
+   border: none; 
+   border-radius: 5px; 
+   cursor: pointer;
+}
+
+.link{
+   font-weight: 500;
+   color:white;
+   font-weight: 600;
+}
+.link a{
+   color: orange;
+   font-weight: bold;
+}
+.form button {
+   padding: 10px 20px;
+   background-color: #333;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.form button:hover {
+   background-color: #555;
+}
+
+.srch {
+   padding: 5px;
+}
+
+.btn, .btnn {
+   padding: 10px 20px;
+   background-color: #333;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.btn a, .btnn a {
+   color: white;
+   text-decoration: none;
+}
+
+.icons a {
+   color: white;
+   margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .navbar {
+       flex-direction: column;
+   }
+
+   .horizontal-menu ul {
+       flex-direction: column;
+       gap: 10px;
+   }
+
+   .vertical-menu {
+       position: static;
+       margin-top: 20px;
+   }
+
+   .content {
+       padding: 20px;
+   }
+
+   .section {
+       padding: 20px;
+   }
+}
+
+
+#story h2{
+   color:blue;
+   font-weight: bold;
+}
+
+#story p{
+   color: aquamarine;
+   font-family: italic;
+}
+
+
+
+
+.gallery-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 10px;
+}
+
+.gallery-container img {
+   width: 30%;
+   border-radius: 10px;
+   transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+   transform: scale(1.05);
+}
+
+
+
+
+/* This is for sign up part */
+#signup input{
+   width: 60%; 
+   padding: 8px; 
+   margin: 8px 0; 
+   border: none; 
+   border-radius: 5px;
+}
+
+#signup .btnn{
+   padding: 8px 16px; 
+   background-color: #333; 
+   color: white; 
+   border: none; 
+   border-radius: 5px; 
+   cursor: pointer;
+}
+
+
+/* This is for search part */
+.search-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.search-input {
+   width: 60%;
+   padding: 10px;
+   border: 2px solid #333;
+   border-radius: 5px 0 0 5px;
+   outline: none;
+}
+
+.search-btn {
+   padding: 10px 20px;
+   background-color: #333;
+   color: white;
+   border: none;
+   border-radius: 0 5px 5px 0;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+   background-color: #555;
+}
+
+/* This part is for Home page  */
+#home .home-content img{
+   width: 60%;
+   height:2%;
+}
+
+#home .home-content p{
+   color: greenyellow;
+}
+
+
+/* .form form{
+   background-color:rgba(0, 0, 0, 0.3);
+   width:300px;
+   height:300px;
+}
+.form form input{
+   width:500px;
+} */
+

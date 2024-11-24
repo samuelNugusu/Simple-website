@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Code With Sami</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <header class="navbar">
+            <div class="icon">
+                <h2 class="logo">Samuel</h2>
+            </div>
+
+            <nav class="horizontal-menu">
+                <ul>
+                    <li><a href="#home" onclick="showSection('home')">HOME</a></li>
+                    <li><a href="#search" onclick="showSection('search')">SEARCH</a></li>
+                    <li><a href="#login" onclick="showSection('login')">LOGIN</a></li>
+                    <li><a href="#signup" onclick="showSection('signup')">SIGN UP</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside class="vertical-menu">
+         <ul>
+             <li><a href="#gallery" onclick="showSection('gallery')">GALLERY</a></li>
+             <li><a href="#contact" onclick="showSection('contact')">CONTACT</a></li>
+             <li><a href="#form" onclick="showSection('form')">FORM</a></li>
+             <li><a href="#story" onclick="showSection('story')">STORY</a></li>
+         </ul>
+     </aside>
+     
+     
+     
+
+        <section class="content">
+            <h1>Web Design & <br><span>Development</span></h1>
+            <p class="par">Hi, I'm Samuel, a seasoned software engineer with a wealth of experience in web development. <br> I've had the privilege of working with numerous companies, delivering high-quality websites and applications. <br> Let's collaborate and create something amazing together!</p>
+
+            <button class="cn"><a href="#">JOIN US</a></button>
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <form action="#" method="post" style="text-align: center; margin-top: 20px;">
+                    <input type="email" name="email" placeholder="Enter Email Here" required ><br>
+                    <input type="password" name="password" placeholder="Enter Password Here" required><br>
+                    <button class="btnn" type="submit" >Login</button>
+                </form>
+
+                <p class="link">Don't have an account?<br>
+                <a href="#signup" onclick="showSection('signup')">Sign up here</a></p>
+                <p class="liw">Log in with</p>
+
+                <div class="icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                </div>
+            </div>
+        </section>
+
+      
+        <section id="home" class="section hidden">
+         <h2>Welcome to My Website</h2>
+         <div class="home-content">
+             <p>Hi, I'm Samuel, a passionate software engineer with extensive experience in web development. <br> I've had the privilege of working with numerous companies, delivering high-quality websites and applications. <br> Let's collaborate and create something amazing together!</p>
+             <img src="sami4787.jpg"  alt="Web Development" >
+         </div>
+     </section>
+     
+        
+     <section id="search" class="section hidden"> 
+      <h2>Search</h2> 
+      <div class="search-container">
+          <input type="text" placeholder="Search..." class="search-input">
+          <button class="search-btn">Search</button>
+      </div>
+  </section>
+  
+        
+        <section id="login" class="section hidden"> 
+            <h2>Login</h2> 
+            <p>Login functionality will be here.</p> 
+        </section> 
+        
+        <section id="signup" class="section hidden"> 
+         <h2>Sign Up</h2> 
+         <form action="#" method="post" style="text-align: center; margin-top: 20px;">
+             <input type="text" name="username" placeholder="Enter Username Here" required>
+             <input type="email" name="email" placeholder="Enter Email Here" required>
+             <input type="password" name="password" placeholder="Enter Password Here" required ><br>
+             <button class="btnn" type="submit">Sign Up</button>
+         </form>
+     </section>
+     
+     
+        
+        <section id="gallery" class="section hidden"> 
+         <h2>Gallery</h2> 
+         <div class="gallery-container">
+             <img src="sami4787.jpg">
+             <img src="photo_2023-07-27_01-29-45 (4).jpg" alt="City Skyline">
+             <img src="photo_2023-07-27_01-29-41.jpg" alt="Mountain View">
+             <img src="photo_2024-11-09_01-18-37.jpg" alt="Sunset Beach">
+             <img src="sami1.jpg" alt="Forest Path">
+             <img src="photo_2023-07-27_01-29-45 (4).jpg" alt="Desert Dunes">
+         </div>
+     </section>
+     
+        
+        <section id="contact" class="section hidden"> 
+            <h2>Contact</h2> 
+            <p>Phone: <h1>+251987792401</h1></p> 
+            <p>Email: <h3>saminugus126@gmail.com</h3></p>
+            <p>Address: <h3>Haramaya University</h3></p> 
+            <p></p>
+        </section> 
+        
+        <section id="form" class="section hidden"> 
+         <h2>Form</h2> 
+         <form action="#" method="post" >
+             <input type="text" name="name" placeholder="Enter Your Name" required>
+
+             <input type="email" name="email" placeholder="Enter Your Email" required style="width: 60%; padding: 8px; margin: 8px 0; border: none; border-radius: 5px;">
+
+             <textarea name="message" placeholder="Enter Your Message" required ></textarea><br>
+
+             <button type="submit">Submit</button>
+         </form>
+
+     </section>
+     
+        
+        <section id="story" class="section hidden"> 
+         <h2>My Journey</h2> 
+         <p>From a young age, I was fascinated by technology and its potential to change the world. This passion led me to pursue a career in software engineering. Over the years, I've had the privilege of working with numerous companies, honing my skills and gaining invaluable experience. Today, I specialize in creating innovative web solutions that not only meet but exceed client expectations. Join me on this exciting journey as we explore the endless possibilities of technology together.</p> 
+     </section>
+     
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+
+</body>
+</html>
